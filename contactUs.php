@@ -1,9 +1,8 @@
-<section id="contactUs">
-<div class="container-fluid">
+<section id="contactUs" class="section-small-top section-colored-bg">
   <div class="col-sm-12 col-md-8 col-lg-5 headline ">
 
       <div class="col-sm-12 sendYourMessage">
-        <h5>Nosūti mums savu ziņu vai jautājumu</h5>
+        <h5 class="section-title-colored-bg">Nosūti mums savu ziņu vai jautājumu</h5>
         </div>
 
 
@@ -27,6 +26,5 @@
 
       </div>
 
-    </div>
   </div>
 </section>
