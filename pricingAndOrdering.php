@@ -1,4 +1,4 @@
-<section id="pricing" class="section-small-top section-colored-bg ">
+<section id="pricing" class="section-normal section-colored-bg ">
   <div class="container-fluid">
 
     <h2 class="section-title-colored-bg">izvēlies savu piedāvājumu </h2>
@@ -50,4 +50,9 @@
 
 
 
+</section>
+
+<section id="delivery"  class="section-normal">
+  <h2 class="section-title-white-bg"> Piegādes informācija</h2>
+  <p>šeit teksts, soļi</p>
 </section>

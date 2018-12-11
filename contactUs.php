@@ -1,4 +1,4 @@
-<section id="contactUs" class="section-small-top section-colored-bg">
+<section id="contactUs" class="section-normal section-colored-bg">
   <div class="col-sm-12 col-md-8 col-lg-5 headline ">
 
       <div class="col-sm-12 sendYourMessage">

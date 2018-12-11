@@ -1,14 +1,16 @@
 <section id="head-image-section" class="section-normal">
 
   <div class="row">
-    <div class="col-md-4 head-image">
+    <div class="col-sm-4 head-image">
       <img class="main-pic-index d-none d-sm-block" src="images\strawberry (1).png" alt="strawberries">
     </div>
 
     <div class="col-md-8 head-image-textbox">
-      <a href="?page=ourStrawberries">
+      <a href="?page=index">
         <h4 class="head-pic-text "> Latvijā audzētas zemenes<h4>
       </a>
+      <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal" data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
+    Piesakies jaunumiem savā e-pastā</button>
     </div>
   </div>
 
@@ -18,21 +20,21 @@
 <section id="values" class="section-normal">
 
   <div class="row">
-    <div class="col-lg-4  col-sm-6 value-box">
+    <div class="col-lg-4 col-md-4 col-sm-6 value-box">
       <i class="fas fa-leaf"></i>
       <p> Labas </p>
       <span> Lorem ipsum dolor sit amet consectetur adipisicing elit.
       </span>
     </div>
 
-    <div class="col-lg-4 col-sm-6 value-box">
+    <div class="col-lg-4 col-md-4 col-sm-6 value-box">
       <i class="fas fa-users"></i>
       <p> Garšīgas</p>
       <span> Doloribus ab ipsum odit, pariatur dignissimos nam!
       </span>
     </div>
 
-    <div class="col-lg-4 col-sm-6 value-box">
+    <div class="col-lg-4 col-md-4 col-sm-6 value-box">
       <i class="fas fa-people-carry"></i>
       <p> Svaigas </p>
       <span> Doloribus ab ipsum odit, pariatur dignissimos nam!
@@ -47,7 +49,7 @@
     <div class="col-sm-12 testimonials-section d-none d-sm-block">
       <h2 class="section-title-colored-bg"> mūsu klienti runā </h2>
 
-      <div id="testimonialsCarousel" class="carousel slide" data-ride="carousel">
+      <div id="testimonialsCarousel" class="carousel slide" data-interval="3000" data-ride="carousel">
 
         <div class="carousel-inner ">
           <div class="carousel-item active">
@@ -101,72 +103,78 @@
         <h2 class="section-title-white-bg">piesakies mūsu jaunumiem par: </h2>
       </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
-          <img class="newsletter-icon" src="images\calendar.png">
-          <p class="newsletterTopicListItem">tuvākajiem piegādes laikiem</p>
-        </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
+        <img class="newsletter-icon  newsletterTopicsTooltip" data-toggle="tooltip" data-placement="bottom"  title="Tā kā zemeņu sezonā piegāde ir superatkarīga no laiak apstākļiem - jaunākās ziņas e-pastā"" src="images\calendar.png">
+        <p class="newsletterTopicListItem">tuvākajiem piegādes laikiem</p>
+      </div>
 
-        <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
-          <img class="newsletter-icon" src="images\price-tag.png">
-          <p class="newsletterTopicListItem">aktuālajām cenām</p>
-        </div>
-        <div class="col-sm-12 col-md-12 col-lg-4 newsletter-topic-box">
-          <img class="newsletter-icon" src="images\newspaper.png">
-          <p class="newsletterTopicListItem">dažādi saimniecības jaunumi</p>
-        </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
+        <img class="newsletter-icon" src="images\price-tag.png">
+
+      <p class="newsletterTopicListItem newsletterTopicsTooltip" data-toggle="tooltip" data-placement="bottom"  title="Tā kā zemeņu sezonā cenas mainās visai strauji, tad ir izdevīgi to saņemt uzreiz e-pastā!" >aktuālajām cenām</p>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-4 newsletter-topic-box">
+        <img class="newsletter-icon" src="images\newspaper.png">
+        <p class="newsletterTopicListItem">dažādi saimniecības jaunumi</p>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+  <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal" data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
+    Pieteikties</button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="applyNewsModal" tabindex="-1" role="dialog" aria-labelledby="applyNewsModalLabel"
+    aria-hidden="true">
+    <div class="container modal-dialog " role="document">
+      <div class="modal-content">
+
+        <form method="POST" accept-charset="UTF-8" class="clientForm" name="newsletterForm" novalidate action="post.php">
+          <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+
+
+          <div class="form-group">
+
+            <p class="validation-box" id="form-text"> </p>
+
+            <label for="email">E-pasta adrese</label>
+            <input type="email" class="form-control input-lg" name="form_email" id="email_Input" placeholder="Ievadi savu e-pasta adresi"
+              required >
+            <p class="validation-box email-text"> </p>
+          </div>
+
+          <div class="form-group">
+            <label for="name">Mēs labprāt zinātu kā Tevi uzrunāt</label>
+            <input type="text" class="form-control input-lg" id="name_Input" name="form_name" placeholder="Tavs vārds" >
+            <p class="validation-box name-text"> </p>
+
+          </div>
+
+
+          <div class="form-group " id="agree-terms">
+            <label class="form-check-label">
+              <input id="agree-terms" type="checkbox" class="form-check-input" value="">
+              "Piekrītu savu personas datu apstrādei, lai saņemtu
+              informatīvus materiālus no "Kalmes". Ar šo es apstiprinu, ka esmu informēts/-a, ka man ir tiesības
+              jebkurā brīdī atsaukt savu piekrišanu datu apstrādei, tiesības pieprasīt to labošanu vai dzēšanu.
+              Apzinos, ka dati tiks saglabāti un apstrādāti atbilstoši "Kalmes" privātuma politikai".</label>
+          </div>
+          <div class="button-wrapper">
+            <button class="btn btn-secondary pieteikties-jaunumiem" onclick="validateForm()">Pieteikties</button></div>
+
+        </form>
+
       </div>
 
     </div>
-
-
-
-
-
-    <button type="button" class="btn btn-secondary btn-md" data-toggle="modal" data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
-      Pieteikties</button>
-
-    <!-- Modal -->
-    <div class="modal fade" id="applyNewsModal" tabindex="-1" role="dialog" aria-labelledby="applyNewsModalLabel"
-      aria-hidden="true">
-      <div class="container modal-dialog " role="document">
-        <div class="modal-content">
-
-          <form method="POST" accept-charset="UTF-8" class="clientForm" name="newsletterForm" action="">
-            <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-
-
-            <div class="form-group">
-              <label for="email">E-pasta adrese</label>
-              <input type="email" class="form-control input-lg" name="form_email" id="email_Input" placeholder="Ievadi savu e-pasta adresi"
-                required>
-
-            </div>
-
-            <div class="form-group">
-              <label for="name">Mēs labprāt zinātu kā Tevi uzrunāt</label>
-              <input type="text" class="form-control input-lg" id="name_Input" name="form_name" placeholder="Tavs vārds"
-                required>
-            </div>
-
-
-            <div class="form-group " id="agree-terms">
-              <label class="form-check-label">
-                <input id="agree-terms" type="checkbox" class="form-check-input" value="">
-                "Piekrītu savu personas datu apstrādei, lai saņemtu
-                informatīvus materiālus no "Kalmes". Ar šo es apstiprinu, ka esmu informēts/-a, ka man ir tiesības
-                jebkurā brīdī atsaukt savu piekrišanu datu apstrādei, tiesības pieprasīt to labošanu vai dzēšanu.
-                Apzinos, ka dati tiks saglabāti un apstrādāti atbilstoši "Kalmes" privātuma politikai".</label>
-            </div>
-            <div class="button-wrapper">
-              <button type="button" class="btn btn-secondary pieteikties-jaunumiem">Pieteikties</button></div>
-          </form>
-
-        </div>
-
-      </div>
-    </div>
+  </div>
   </div>
   </div>
 
@@ -175,11 +183,11 @@
 
 <section id="ourLocationSection" class="section-normal section-colored-bg">
 
-  <div class="col-sm-12 ourLocation ">
-    <h2 class="section-title-colored-bg">mēs atrodamies</h2>
+  <div class="col-sm-12 ourLocation">
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17702.010436083332!2d24.239637730205363!3d56.31686521529724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e8bf4aad43a471%3A0x30d0c739dfdf41fd!2zVXp2YXJhLCBHYWlsxKvFoWkgcGFyaXNoLCBMVi0zOTMx!5e0!3m2!1sen!2slv!4v1543501379578"
-      width="800" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <h2 class="section-title-colored-bg"> <i class="fas fa-map-marked-alt location-icon"></i> mēs atrodamies</h2>
+    <p> Uzvara, Bauskas novads, Latvijā</p>
+    </iframe>
   </div>
 
 

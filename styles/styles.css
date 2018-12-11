@@ -24,14 +24,13 @@ h3 {
   font-size: 1.5rem
 }
 
+
+
 p {
-  line-height: 1.5;
+  line-height: 1.;
 }
 
 /*sections*/
-.section-colored-bg {
-  background-color: rgb(201, 89, 126);
-}
 
 .section-normal {
   padding: 6% 15% 7% 15%;
@@ -39,6 +38,10 @@ p {
 
 .section-small-top {
   padding: 1% 15% 1% 15%;
+}
+
+.section-colored-bg {
+  background-color: rgb(201, 89, 126);
 }
 
 .section-title-colored-bg {
@@ -52,6 +55,7 @@ p {
 }
 
 .section-title-white-bg {
+  color: rgb(158, 55, 90);
   margin: 3% auto 3% auto
 }
 
@@ -60,24 +64,29 @@ p {
 }
 
 /* Navigation bar*/
+#navigation {
+  background: rgba(41, 101, 83, .8);
+  position: fixed;
+  display: block;
+  z-index: 100;
+}
 
 .navbar {
   font-weight: bolder;
 }
 
 .navbar-brand {
-  color: rgb(23, 153, 110);
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-right: 5%;
   font-family: 'Marck Script';
 }
 
 a.nav-link {
-  color: rgb(23, 153, 110);
+  color: #fff;
 }
 
 .nav-link:hover {
-  color: rgb(3, 88, 60);
+  color: rgb(230, 105, 147);
   text-decoration: none;
 }
 
@@ -96,27 +105,37 @@ a.nav-link {
 }
 
 .main-pic-index {
+  margin-top: 8%;
   width: 90%;
   float: left;
 }
 
-.head-pic-text {
+h4.head-pic-text {
   font-size: 4rem;
   text-decoration: none;
   float: left;
   margin-top: 12%;
   font-family: 'Marck Script', cursive;
   color: #fff;
-  width: 85%;
 }
 
-.head-image-textbox :hover {
-  text-decoration: none
+
+
+@media screen and (max-width: 767px) {
+  .main-pic-index {
+    display: block;
+
+  }
+
+  .head-image-textbox {
+    text-decoration: none
+  }
 }
 
 /*values */
 .value-box {
   padding: 5% auto 5% auto;
+  margin: 5% auto 5% auto;
 }
 
 .fas {
@@ -169,14 +188,14 @@ p.newsletterTopicListItem {
   padding: 5%
 }
 
-.btn {
+.applyForNewsletterMediumBtn {
   margin-top: 20px;
   vertical-align: middle;
   border: none;
   border-radius: 6px;
   text-transform: uppercase;
   display: inline-block;
-  background-color: rgb(158, 55, 90);
+  background-color: rgb(90, 84, 86);
 }
 
 .btn:hover {
@@ -185,6 +204,28 @@ p.newsletterTopicListItem {
   box-shadow: none;
 }
 
+/* Tooltip */
+
+
+.tooltip-inner {
+  max-width: 300px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  height: auto;
+  font-size: 0.8rem;
+  padding: 10px;
+  background-color: rgb(158, 55, 90);
+  color: #fff;
+  border: 1px solid rgb(112, 52, 52);
+  text-align: left;
+}
+
+/* šis nestrādā kaut kāda iemesl dēļ ; JĀSKATĀS*/
+.newsletterTopicsTooltip+.tooltip.bottom>.tooltip-arrow {
+  border-bottom: 5px solid blue;
+}
+
+/* klienta pieteikšanās forma iekš PIETEIKTIEs pogas */
 .clientForm {
   background-color: rgb(245, 240, 240);
   padding: 10px 20px 20px 20px;
@@ -206,6 +247,18 @@ p.newsletterTopicListItem {
 #agree-terms :hover {
   cursor: pointer;
 }
+
+p.validation-box {
+  color: rgb(219, 35, 96);
+  background-color: blueviolet;
+}
+
+/*map section*/
+i.location-icon {
+  color: #fff;
+}
+
+
 
 /* pricing page */
 section.small-top {
@@ -230,7 +283,14 @@ section.small-top {
 }
 
 .buy-btn {
-  color: #fff;
+  margin-top: 20px;
+  vertical-align: middle;
+  border: none;
+  border-radius: 6px;
+  text-transform: uppercase;
+  display: inline-block;
+  background-color: rgb(90, 84, 86);
+  color: #fff
 }
 
 .pricing-column {
