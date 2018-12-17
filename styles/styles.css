@@ -33,7 +33,7 @@ p {
 /*sections*/
 
 .section-normal {
-  padding: 6% 15% 7% 15%;
+  padding: 10% 15% 5% 15%;
 }
 
 .section-small-top {
@@ -185,7 +185,7 @@ p.newsletterTopicListItem {
 }
 
 .newsletter-topic-box {
-  padding: 5%
+  padding: 5% 5% 0 5%
 }
 
 .applyForNewsletterMediumBtn {
@@ -201,7 +201,6 @@ p.newsletterTopicListItem {
 .btn:hover {
   border: none;
   background-color: rgb(219, 103, 103);
-  box-shadow: none;
 }
 
 /* Tooltip */
@@ -210,20 +209,15 @@ p.newsletterTopicListItem {
 .tooltip-inner {
   max-width: 300px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   height: auto;
   font-size: 0.8rem;
   padding: 10px;
   background-color: rgb(158, 55, 90);
   color: #fff;
-  border: 1px solid rgb(112, 52, 52);
   text-align: left;
 }
 
-/* šis nestrādā kaut kāda iemesl dēļ ; JĀSKATĀS*/
-.newsletterTopicsTooltip+.tooltip.bottom>.tooltip-arrow {
-  border-bottom: 5px solid blue;
-}
+
 
 /* klienta pieteikšanās forma iekš PIETEIKTIEs pogas */
 .clientForm {
@@ -246,6 +240,14 @@ p.newsletterTopicListItem {
 
 #agree-terms :hover {
   cursor: pointer;
+}
+
+#agree-terms span {
+  color: rgb(17, 17, 168);
+}
+
+#agree-terms span:hover {
+  text-decoration: underline;
 }
 
 p.validation-box {
@@ -299,12 +301,13 @@ section.small-top {
 
 /* contact Us page*/
 .sendMessagebutton {
-  background-color: rgb(219, 103, 103);
-  margin-bottom: 4%;
+  background-color: rgb(90, 84, 86);
+  border: none;
+  margin: 4% auto 4% auto;
 }
 
 .sendMessagebutton:hover {
-  background-color: rgb(7, 163, 111);
+  background-color: rgb(219, 103, 103)
 }
 
 .headline {
@@ -313,20 +316,58 @@ section.small-top {
   background-color: rgb(158, 55, 90);
   border-radius: 3%;
   color: #fff;
+
 }
 
 .checkbox {
   font-size: 75%;
   margin: 5% auto 0 auto;
   display: block;
+  color: white;
 }
 
-#checkbox_gdpr:hover {
-  cursor: pointer;
+.checkbox a {
+  color: navy;
 }
 
-label .checkbox :hover {
-  cursor: pointer;
+.close {
+  text-align: right;
+  margin: 2% 2% auto auto
+}
+
+#privacyPolicyModal {
+  font-size: 0.75rem;
+  color: rgb(66, 66, 66);
+  text-align: left;
+
+
+}
+
+#privacyPolicyModal .modal-content {
+  padding: 2%
+}
+
+.modal-title {
+  text-align: center;
+}
+
+
+ol.privacyPolicy-list li {
+  margin: 2%
+}
+
+#whyWeDowhatWeDo img {
+  width: 100%;
+}
+
+.img-parallax img {
+  width: 50%;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
 }
 
 /*footer*/

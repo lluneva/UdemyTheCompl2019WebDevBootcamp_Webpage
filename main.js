@@ -3,11 +3,12 @@ function validateForm() {
   var enteredEmail = document.forms['newsletterForm']['form_email'].value;
   var enteredName = document.forms['newsletterForm']['form_name'].value;
 
+
+
   if (enteredEmail == '' || enteredName == '') {
-    document.getElementById("form-text").innerHTML = "Jūs neesat aizpildījis formu";
+    alert("Jūs neesat aizpildījis visu formu");
     return false;
   }
-
 }
 
 $(document).ready(function () {
@@ -15,3 +16,7 @@ $(document).ready(function () {
     animation: true
   });
 });
+
+function openPrivacyPolicy() {
+  window.open("privacy-policy-template.pdf");
+}

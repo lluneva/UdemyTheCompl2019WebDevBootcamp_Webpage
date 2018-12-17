@@ -9,8 +9,9 @@
       <a href="?page=index">
         <h4 class="head-pic-text "> Latvijā audzētas zemenes<h4>
       </a>
-      <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal" data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
-    Piesakies jaunumiem savā e-pastā</button>
+      <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal"
+        data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
+        Piesakies jaunumiem savā e-pastā</button>
     </div>
   </div>
 
@@ -103,15 +104,16 @@
         <h2 class="section-title-white-bg">piesakies mūsu jaunumiem par: </h2>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
-        <img class="newsletter-icon  newsletterTopicsTooltip" data-toggle="tooltip" data-placement="bottom"  title="Tā kā zemeņu sezonā piegāde ir superatkarīga no laiak apstākļiem - jaunākās ziņas e-pastā"" src="images\calendar.png">
+      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box"  data-toggle="tooltip" data-placement="bottom" title="Tā kā zemeņu sezonā piegāde ir superatkarīga no laiak apstākļiem - jaunākās ziņas e-pastā">
+        <img class="newsletter-icon  newsletterTopicsTooltip" src="
+          images\calendar.png">
         <p class="newsletterTopicListItem">tuvākajiem piegādes laikiem</p>
       </div>
 
-      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box">
+      <div class="col-sm-12 col-md-6 col-lg-4 newsletter-topic-box" data-toggle="tooltip" data-placement="bottom" title="Tā kā zemeņu sezonā cenas mainās visai strauji, tad ir izdevīgi to saņemt uzreiz e-pastā!">
         <img class="newsletter-icon" src="images\price-tag.png">
-
-      <p class="newsletterTopicListItem newsletterTopicsTooltip" data-toggle="tooltip" data-placement="bottom"  title="Tā kā zemeņu sezonā cenas mainās visai strauji, tad ir izdevīgi to saņemt uzreiz e-pastā!" >aktuālajām cenām</p>
+        <p class="newsletterTopicListItem newsletterTopicsTooltip" >aktuālajām
+          cenām</p>
       </div>
       <div class="col-sm-12 col-md-12 col-lg-4 newsletter-topic-box">
         <img class="newsletter-icon" src="images\newspaper.png">
@@ -125,7 +127,8 @@
 
 
 
-  <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal" data-target="#applyNewsModal"> <i class="fas fa-envelope"></i>
+  <button type="button" class="btn btn-secondary btn-md applyForNewsletterMediumBtn" data-toggle="modal" data-target="#applyNewsModal">
+    <i class="fas fa-envelope"></i>
     Pieteikties</button>
 
   <!-- Modal -->
@@ -133,26 +136,22 @@
     aria-hidden="true">
     <div class="container modal-dialog " role="document">
       <div class="modal-content">
-
-        <form method="POST" accept-charset="UTF-8" class="clientForm" name="newsletterForm" novalidate action="post.php">
+        <form method="POST" accept-charset="UTF-8" class="clientForm" name="newsletterForm" action="post.php" onsubmit="return validateForm()">
           <button type=" button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
 
-
           <div class="form-group">
-
             <p class="validation-box" id="form-text"> </p>
-
             <label for="email">E-pasta adrese</label>
             <input type="email" class="form-control input-lg" name="form_email" id="email_Input" placeholder="Ievadi savu e-pasta adresi"
-              required >
+              required>
             <p class="validation-box email-text"> </p>
           </div>
 
           <div class="form-group">
             <label for="name">Mēs labprāt zinātu kā Tevi uzrunāt</label>
-            <input type="text" class="form-control input-lg" id="name_Input" name="form_name" placeholder="Tavs vārds" >
+            <input type="text" class="form-control input-lg" id="name_Input" name="form_name" placeholder="Tavs vārds">
             <p class="validation-box name-text"> </p>
 
           </div>
@@ -160,14 +159,16 @@
 
           <div class="form-group " id="agree-terms">
             <label class="form-check-label">
-              <input id="agree-terms" type="checkbox" class="form-check-input" value="">
-              "Piekrītu savu personas datu apstrādei, lai saņemtu
-              informatīvus materiālus no "Kalmes". Ar šo es apstiprinu, ka esmu informēts/-a, ka man ir tiesības
+              <input id="agree-terms" type="checkbox" class="form-check-input" value="" required>
+Piekrītu savu personas datu apstrādei, lai saņemtu
+              informatīvus materiālus no "Super zemeņu piegādātāja SIA". Ar šo es apstiprinu, ka esmu informēts/-a, ka
+              man ir tiesības
               jebkurā brīdī atsaukt savu piekrišanu datu apstrādei, tiesības pieprasīt to labošanu vai dzēšanu.
-              Apzinos, ka dati tiks saglabāti un apstrādāti atbilstoši "Kalmes" privātuma politikai".</label>
+              Apzinos, ka dati tiks saglabāti un apstrādāti atbilstoši "Super zemeņu piegādātāja SIA" <span onclick="openPrivacyPolicy()">
+                privātuma politikai</span>.</label>
           </div>
           <div class="button-wrapper">
-            <button class="btn btn-secondary pieteikties-jaunumiem" onclick="validateForm()">Pieteikties</button></div>
+            <button class="btn btn-secondary pieteikties-jaunumiem" type="submit" onclick="validateForm()">Pieteikties</button></div>
 
         </form>
 

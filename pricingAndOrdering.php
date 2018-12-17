@@ -52,7 +52,7 @@
 
 </section>
 
-<section id="delivery"  class="section-normal">
+<section id="delivery"  class="section-small-top">
   <h2 class="section-title-white-bg"> Piegādes informācija</h2>
   <p>šeit teksts, soļi</p>
 </section>
