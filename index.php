@@ -16,6 +16,9 @@ switch ($page) {
  case 'pricingAndOrdering':
   include_once 'pricingAndOrdering.php';
   break;
+ case 'recipes':
+  include_once 'recipes.php';
+  break;
 
 }
 

@@ -12,7 +12,7 @@
             <h2> 7 eur/kg </h2>
             <p> no 5cm diametrā</p>
             <p>dažādas svara variācijas</p>
-            <button type="button" class="btn btn-lg btn-block buy-btn">Pirkt</button>
+            <button type="button" class="btn btn-lg btn-block buy-btn"><i class="fas fa-shopping-basket"></i>Pirkt</button>
           </div>
         </div>
       </div>
@@ -24,7 +24,7 @@
             <p> 3.5cm - 5cm diametrā</p>
             <p>dažādas svara variācijas</p>
 
-            <button type="button" class="btn btn-lg btn-block buy-btn">Pirkt</button>
+            <button type="button" class="btn btn-lg btn-block buy-btn"><i class="fas fa-shopping-basket"></i>Pirkt</button>
 
           </div>
         </div>

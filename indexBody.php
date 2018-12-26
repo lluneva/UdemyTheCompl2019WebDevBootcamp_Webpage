@@ -1,8 +1,8 @@
-<section id="head-image-section" class="section-normal">
+<section id="head-image-section" class="section-normal d-none d-sm-block">
 
-  <div class="row">
-    <div class="col-sm-4 head-image">
-      <img class="main-pic-index d-none d-sm-block" src="images\strawberry (1).png" alt="strawberries">
+  <div class="row ">
+    <div class="col-sm-4 head-image ">
+      <img class="main-pic-index " src="images\strawberry (1).png" alt="strawberries">
     </div>
 
     <div class="col-md-8 head-image-textbox">
@@ -41,7 +41,10 @@
       <span> Doloribus ab ipsum odit, pariatur dignissimos nam!
       </span>
     </div>
+
   </div>
+  <a href="?page=pricingAndOrdering"><button type="button" class="btn btn-secondary btn-md buy-btn " >
+  <i class="fas fa-shopping-basket"></i> Pirkt</button></a>
 </section>
 
 <section id="testimonials" class="section-normal section-colored-bg">

@@ -1,3 +1,4 @@
+
 <section id="contactUs" class="section-normal section-colored-bg">
   <div class="container-fluid">
     <div class="row">
@@ -78,8 +79,8 @@
 
             </ol>
             <div class="button-wrapper">
-            <button type="close" class="btn btn-secondary" data-dismiss="modal" > Aizvērt </button>
-          </div>
+              <button type="close" class="btn btn-secondary" data-dismiss="modal"> Aizvērt </button>
+            </div>
           </div>
 
         </div>
@@ -88,32 +89,4 @@
     </div>
   </div>
 
-</section>
-
-<section id="whoWeAre" class="section-normal section-white-bg ">
-  <h2 class="section-title-white-bg">Kas mēs esam ?</h2>
-  <div class="col-lg-12 col-md-12 col-sm-12">
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, rerum? Commodi esse veniam, tempora fuga
-      dolores consequatur aliquid laudantium qui itaque praesentium inventore repellat cumque vero vitae laborum iusto
-      necessitatibus.</p>
-  </div>
-</section>
-
-
-<section id="whyWeDowhatWeDo" class="section-normal section-colored-bg">
-<div class="row">
-  <div class="col-lg-6">
-    <h2 class="section-title-colored-bg">Kāpēc mēs darām to, ko mēs darām ?</h2>
-
-  <div class="">
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, rerum? Commodi esse veniam, tempora fuga
-      dolores consequatur aliquid laudantium qui itaque praesentium inventore repellat cumque vero vitae laborum iusto
-      necessitatibus.</p>
-  </div>
-
-</div>
-<div class="col-lg-6 col-md-12 col-sm-12 img-parallax">
-    <img  src="http://www.victoriabuzz.com/wp-content/uploads/2016/07/Dollarphotoclub_66885129.jpg" alt="strawberry field">
-</div>
-</div>
 </section>

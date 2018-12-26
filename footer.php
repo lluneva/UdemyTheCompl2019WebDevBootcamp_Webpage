@@ -4,8 +4,10 @@
     <div class="row">
         <div class="col-sm-12  footer" id="footerelement">
 
-            &copy; Visas tiesības aizsargātas, 2018
+            &copy; Visas tiesības aizsargātas, 2018.
         </div>
+
+
     </div>
 
 </section>
